@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh; 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden;
+        }
+
+        .filter {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.7));
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .container {
+            height: 150vh; 
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 1000px;
+            height: 500px;
+            border: solid 1px rgb(230, 230, 230); 
+            background-color: white;
+            position: relative;
+            display: flex; 
+        }
+
+        .box > * {
+            width: 25%; 
+            /* height: 100%;  */
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col {
+            padding: 25px; 
+            color: #333;
+            background: linear-gradient(to left, rgb(230, 230, 230), white 15%, white 85%, rgb(230, 230, 230) 100%);
+        }
+
+        .col > img {
+            border-radius: 100%;
+        }
+
+        .col:nth-child(1) {
+            background: linear-gradient(to right, white 85%, rgb(230, 230, 230));
+        }
+
+        .col:nth-child(4) {
+            background: linear-gradient(to left, white 85%, rgb(230, 230, 230));
+        }
+
+        .box1 {
+            box-shadow: 10px 10px 10px rgb(200, 200, 200);
+            z-index: 5;
+        }
+
+        .box2 {
+            z-index: -1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <div class="col">
+                <img src="https://picsum.photos/100/100/?random=1">
+                <p>
+                    不要法人例如受傷簡單每個人原文查看這個需求總統資料庫，欣賞有機會興趣，年齡秘密，早就如同體力賺錢證。
+                </p>
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/100/100/?random=2">
+                <p>
+                    不要法人例如受傷簡單每個人原文查看這個需求總統資料庫，欣賞有機會興趣，年齡秘密，早就如同體力賺錢證。
+                </p>
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/100/100/?random=3">
+                            <p>
+                    不要法人例如受傷簡單每個人原文查看這個需求總統資料庫，欣賞有機會興趣，年齡秘密，早就如同體力賺錢證。
+                </p>
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/100/100/?random=4">
+                            <p>
+                    不要法人例如受傷簡單每個人原文查看這個需求總統資料庫，欣賞有機會興趣，年齡秘密，早就如同體力賺錢證。
+                </p>
+            </div>
+        </div>
+        <div class="box box2">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="filter"></div>
+</body>
+</html>
